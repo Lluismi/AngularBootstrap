@@ -1,0 +1,27 @@
+<div class="p-4 m-2">
+    <button type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h1 class="relative-top"> {{ nombre }} </h1>
+
+    <table style="height: 100px">
+        <tr>
+            <td class="align-top"> Nombre: </td>
+            <td class="align-top"> {{ nombre }} </td>
+
+            <td class="align-middle"> Edad: </td>
+            <td class="align-middle"> {{ edad }} </td>
+
+            <td class="align-bottom"> Función: </td>
+            <td class="align-bottom"> {{ obtenerNombre() }} </td>
+
+            <td class="align-text-bottom"> Capitalizado: </td>
+            <td class="align-text-bottom"> {{ nombreCapitalizado }} </td>
+        </tr>
+    </table>
+
+    <button class="d-inline p-2 m-2 btn btn-outline-dark" (click)="cambiarNombre()">Cambiar Heroe</button>
+
+    <button class="d-inline p-2 m-2 btn btn-outline-primary" (click)="cambiarEdad()">Cambiar Edad</button>
+    
+</div>
